@@ -15,6 +15,9 @@ from django.contrib.auth.models import User
 from friendship.models import Friend, Follow, Block
 
 
+def hello_world(request):
+    return render("helloworld")
+    
 @login_required(login_url='/accounts/login/')
 def index(request):
     # profile = UserProfile.objects.create(user=request.user)

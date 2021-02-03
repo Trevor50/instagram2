@@ -14,6 +14,7 @@ urlpatterns = [
     url(r'^like/(?P<image_id>\d+)', views.like, name='like'),
     url(r'^follow/(\d+)$', views.follow, name='follow'),
     url(r'^unfollow/(\d+)$', views.unfollow, name='unfollow'),
+    url(r'^hello', views.hello_world, name='hello'),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,
